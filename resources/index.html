@@ -9,7 +9,7 @@
 			max-width: 200mm;
 			margin: auto;
 		}
-		table, div{
+		div{
 			margin: auto;
 		}
 		h1{
@@ -27,15 +27,16 @@
 			margin: 5mm;
 		}
 	</style>
-	<body style='background-color:#a6a6a6;'><div class='content'>
-		<div>
-			<h1>Alex Club pedane weightlifting</h1>
+	<body style='background-color:#a6a6a6;'>
+		<div class='content'>
+			<h1>Alex Club pedane</h1>
 			<h2>Numero pedane:</h2>
 			<input id='platforms' type='number'  min='1' max='99' step='1' value='7' placeholder='7'>
 			<h2>Massimali atleti:</h2>
 			<input style='width: 100%' id='athletes' type='text' pattern="[0-9 ]+" placeholder='60 60 70'>
+			<h2>Suddivisione:</h2>
+			<div id='results'></div>
 		</div>
-		<div id='results'></div>
-		<script src='script.js'></script>
-	</div></body>
+	</body>
+	<script src='script.js'></script>
 </html>
