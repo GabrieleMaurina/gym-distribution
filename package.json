@@ -1,0 +1,27 @@
+{
+  "name": "gym-distribution",
+  "version": "1.0.0",
+  "description": "App to distribute athletes to platforms according to their working load.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrieleMaurina/gym-distribution.git"
+  },
+  "keywords": [
+    "gym",
+    "distribution"
+  ],
+  "author": "Gabriele Maurina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GabrieleMaurina/gym-distribution/issues"
+  },
+  "homepage": "https://github.com/GabrieleMaurina/gym-distribution#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

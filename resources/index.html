@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Alex Club pedane</title>
+		<script src='cookies.js'></script>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+	</head>
+	<style>
+		.content{
+			max-width: 200mm;
+			margin: auto;
+		}
+		table, div{
+			margin: auto;
+		}
+		h1{
+			text-align:center;
+			font-size: 15mm;
+		}
+		h2{
+			font-size: 10mm;
+		}
+		input{
+			font-size: 10mm;
+		}
+		.results{
+			border: 3mm solid black;
+			margin: 5mm;
+		}
+	</style>
+	<body style='background-color:#a6a6a6;'><div class='content'>
+		<div>
+			<h1>Alex Club pedane weightlifting</h1>
+			<h2>Numero pedane:</h2>
+			<input id='platforms' type='number'  min='1' max='99' step='1' value='7' placeholder='7'>
+			<h2>Massimali atleti:</h2>
+			<input style='width: 100%' id='athletes' type='text' pattern="[0-9 ]+" placeholder='60 60 70'>
+		</div>
+		<div id='results'></div>
+		<script src='script.js'></script>
+	</div></body>
+</html>
