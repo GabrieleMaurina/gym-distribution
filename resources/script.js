@@ -3,10 +3,14 @@ const MAX = Number.MAX_SAFE_INTEGER
 const PLATFORMS = 'platforms'
 const ATHLETES = 'athletes'
 const RESULTS = 'results'
+const PLUS = '+'
+const MINUS = '-'
 
 const PLATFORMS_INPUT = document.getElementById(PLATFORMS)
 const ATHLETES_INPUT = document.getElementById(ATHLETES)
 const RESULTS_DIV = document.getElementById(RESULTS)
+const PLUS_BUTTON = document.getElementById(PLUS)
+const MINUS_BUTTON = document.getElementById(MINUS)
 
 const EXPIRY = {expiry : 60 * 60 * 24 * 365}
 
@@ -146,6 +150,29 @@ PLATFORMS_INPUT.oninput = () => {
 	}
 	updateResults()
 }
+
+
+
+
+
+//   BUTTONS
+
+PLUS_BUTTON.onclick = () => {
+	value = parse_int(PLATFORMS_INPUT.value)
+	if(value){
+		PLATFORMS_INPUT.value = value + 1
+		PLATFORMS_INPUT.oninput()
+	}
+}
+
+MINUS_BUTTON.onclick = () => {
+	value = parse_int(PLATFORMS_INPUT.value)
+	if(value){
+		PLATFORMS_INPUT.value = value - 1
+		PLATFORMS_INPUT.oninput()
+	}
+}
+
 
 
 

@@ -22,6 +22,14 @@
 		input{
 			font-size: 10mm;
 		}
+		button{
+			font-size: 10mm;
+			padding-left: 5mm;
+			padding-right: 5mm;
+		}
+		td{
+			padding-right: 5mm;
+		}
 		.results{
 			border: 3mm solid black;
 			margin: 5mm;
@@ -31,9 +39,13 @@
 		<div class='content'>
 			<h1>Alex Club pedane</h1>
 			<h2>Numero pedane:</h2>
-			<input id='platforms' type='number'  min='1' max='99' step='1' value='7' placeholder='7'>
+			<table><tr>
+				<td><button id='-' type='button'>-</button></td>
+				<td><input id='platforms' type='number'  min='1' max='99' step='1' value='7' placeholder='7' size='2' style='width:20mm;'></td>
+				<td><button id='+' type='button'>+</button></td>
+			</tr></table>
 			<h2>Massimali atleti:</h2>
-			<input style='width: 100%' id='athletes' type='text' pattern="[0-9 ]+" placeholder='60 60 70'>
+			<input style='width: 100%' id='athletes' type='text' inputmode='numeric' pattern="[0-9 ]+" placeholder='60 60 70'>
 			<h2>Suddivisione:</h2>
 			<div id='results'></div>
 		</div>
